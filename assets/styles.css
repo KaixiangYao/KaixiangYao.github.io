@@ -15,6 +15,7 @@
   --shell: min(1280px, calc(100vw - 64px));
   --font-sans: "Segoe UI Variable", "Segoe UI", Helvetica, Arial, sans-serif;
   --font-display: "Arial Narrow", "Aptos Display", "Segoe UI Variable", Arial, sans-serif;
+  --font-soft-display: "Aptos Display", "Segoe UI Variable Display", "Segoe UI Variable", "Segoe UI", sans-serif;
 }
 
 * {
@@ -235,11 +236,11 @@ p {
 .hero h1 {
   max-width: 760px;
   margin-bottom: 28px;
-  font-family: var(--font-display);
+  font-family: var(--font-soft-display);
   font-size: clamp(60px, 6.6vw, 104px);
-  font-weight: 760;
-  line-height: 0.92;
-  letter-spacing: -0.065em;
+  font-weight: 650;
+  line-height: 0.94;
+  letter-spacing: -0.05em;
 }
 
 .hero h1 em {
@@ -872,10 +873,11 @@ p {
 
 .timeline-body h3 {
   margin: 6px 0 4px;
-  font-family: var(--font-display);
+  font-family: var(--font-soft-display);
   font-size: 26px;
-  line-height: 1.1;
-  letter-spacing: -0.035em;
+  font-weight: 650;
+  line-height: 1.16;
+  letter-spacing: -0.025em;
 }
 
 .timeline-body p {
@@ -1087,7 +1089,7 @@ p {
 .cv-two-column h2 {
   margin: 0;
   color: var(--blue);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 850;
   text-transform: uppercase;
   letter-spacing: 0.13em;
@@ -1169,20 +1171,20 @@ p {
 }
 
 .cv-experience .cv-entry-main h3 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .cv-experience .cv-role,
 .cv-experience .cv-entry-main ul {
-  font-size: 14px;
-}
-
-.cv-experience .cv-entry-main h4 {
   font-size: 16px;
 }
 
+.cv-experience .cv-entry-main h4 {
+  font-size: 18px;
+}
+
 .cv-experience .cv-entry-side {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .publication-list {
@@ -1244,14 +1246,14 @@ p {
 }
 
 .skills-list dt {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 800;
 }
 
 .skills-list dd {
   margin: 2px 0 0;
   color: var(--ink-soft);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .award-list {
@@ -1263,7 +1265,7 @@ p {
 .award-list li {
   display: grid;
   gap: 3px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .award-list li + li {
@@ -1272,7 +1274,7 @@ p {
 
 .award-list span {
   color: var(--ink-soft);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .js .reveal {
