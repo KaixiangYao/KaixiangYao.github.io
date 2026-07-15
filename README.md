@@ -23,6 +23,8 @@ Then visit <http://localhost:8000>.
 - `assets/styles.css` — all responsive styling.
 - `assets/site.js` — navigation, reveal effects, date, and email handling.
 - `assets/*.{png,jpg}` — supplied research overview figures.
+- `robots.txt` and `sitemap.xml` — crawler guidance and public URL discovery.
+- `{key}.txt` — public IndexNow ownership key used for search-engine notifications.
 
 ## Deploy to GitHub Pages
 
