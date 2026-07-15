@@ -856,7 +856,7 @@ p {
 .timeline-date,
 .timeline-tag,
 .timeline-place {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.11em;
@@ -873,7 +873,7 @@ p {
 .timeline-body h3 {
   margin: 6px 0 4px;
   font-family: var(--font-display);
-  font-size: 25px;
+  font-size: 26px;
   line-height: 1.1;
   letter-spacing: -0.035em;
 }
@@ -881,7 +881,7 @@ p {
 .timeline-body p {
   margin: 0;
   color: var(--ink-soft);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .timeline-tag {
@@ -1087,7 +1087,7 @@ p {
 .cv-two-column h2 {
   margin: 0;
   color: var(--blue);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 850;
   text-transform: uppercase;
   letter-spacing: 0.13em;
@@ -1168,6 +1168,23 @@ p {
   font-size: 13px;
 }
 
+.cv-experience .cv-entry-main h3 {
+  font-size: 20px;
+}
+
+.cv-experience .cv-role,
+.cv-experience .cv-entry-main ul {
+  font-size: 14px;
+}
+
+.cv-experience .cv-entry-main h4 {
+  font-size: 16px;
+}
+
+.cv-experience .cv-entry-side {
+  font-size: 13px;
+}
+
 .publication-list {
   padding: 0;
   margin: 0;
@@ -1227,14 +1244,14 @@ p {
 }
 
 .skills-list dt {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 800;
 }
 
 .skills-list dd {
   margin: 2px 0 0;
   color: var(--ink-soft);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .award-list {
@@ -1246,7 +1263,7 @@ p {
 .award-list li {
   display: grid;
   gap: 3px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .award-list li + li {
@@ -1255,7 +1272,7 @@ p {
 
 .award-list span {
   color: var(--ink-soft);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .js .reveal {
