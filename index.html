@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Kaixiang Yao is a robotics engineering undergraduate working on robot learning, contact-rich manipulation, soft robotics, and human-robot interaction."
+    />
+    <meta name="theme-color" content="#171d2b" />
+    <meta property="og:title" content="Kaixiang Yao — Robotics Research" />
+    <meta
+      property="og:description"
+      content="Robot learning for physical interaction: deformable objects, rigid-soft contact, and assistive manipulation."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kaixiangyao.github.io/" />
+    <title>Kaixiang Yao — Robotics Research</title>
+    <link rel="canonical" href="https://kaixiangyao.github.io/" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#top" aria-label="Kaixiang Yao, home">
+        <span class="wordmark-mark" aria-hidden="true">K/Y</span>
+        <span class="wordmark-name">Kaixiang Yao</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#background">Background</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="signal-dot"></span> Robotics Engineering · SUSTech</p>
+          <h1 id="hero-title">Kaixiang Yao</h1>
+          <p class="hero-intro">
+            I am a Robotic Engineering undergraduate at SUSTech. My research focuses on robot learning,
+            contact-rich manipulation, soft robotics, and human–robot interaction.
+          </p>
+          <div class="hero-actions" aria-label="Profile links">
+            <a class="button button-primary" href="#research">Research <span aria-hidden="true">↘</span></a>
+            <button class="button button-quiet email-link" type="button" data-email>Email</button>
+            <a class="text-link" href="cv.html">CV</a>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <span class="meta-label">Currently</span>
+              <span>Undergraduate Researcher · UC Berkeley</span>
+            </div>
+            <div>
+              <span class="meta-label">Based in</span>
+              <span>Shenzhen ↔ Berkeley</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual hero-profile-card reveal" aria-label="Research interests and current focus">
+          <div class="profile-card-header">
+            <span>Research interests</span>
+            <span>2026</span>
+          </div>
+          <div class="interest-list">
+            <span>Robot Learning</span>
+            <span>Contact-Rich Manipulation</span>
+            <span>Soft Robotics</span>
+            <span>Human–Robot Interaction</span>
+          </div>
+          <div class="profile-card-current">
+            <span>Current research</span>
+            <p>History-conditioned adaptation for dynamic rope manipulation</p>
+            <small>UC Berkeley · MSC Lab</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about section-shell section-rule" aria-labelledby="about-title">
+        <div class="section-index reveal">01 / ABOUT</div>
+        <div class="about-statement reveal">
+          <h2 id="about-title">About</h2>
+        </div>
+        <div class="about-body reveal">
+          <p>
+            My work spans deformable-object manipulation, high-fidelity rigid–soft contact, and
+            gaze-driven assistive systems. I combine learning, mechanics, perception, and control for
+            systems that operate in complex physical environments.
+          </p>
+          <p>
+            I study Robotic Engineering at the Southern University of Science and Technology, where I
+            rank first in my cohort. I have also conducted research at UC Berkeley, Shanghai Jiao Tong
+            University, Tsinghua University, and SUSTech.
+          </p>
+          <div class="inline-links">
+            <a href="https://github.com/KaixiangYao" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/kaixiang-yao-7763b9421/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="research section-shell section-rule" aria-labelledby="research-title">
+        <div class="section-index reveal">02 / SELECTED RESEARCH</div>
+        <div class="section-heading reveal">
+          <h2 id="research-title">Selected Research</h2>
+          <p>
+            Work in robot learning, contact-aware simulation, intelligent manufacturing, and assistive manipulation.
+          </p>
+        </div>
+
+        <article class="research-card research-card-featured reveal">
+          <div class="research-figure figure-digital-twin">
+            <img
+              src="assets/digital-twin-overview.png"
+              alt="System overview connecting a physical aircraft assembly, asynchronous digital twin, and supervisory safety feedback"
+            />
+            <span class="figure-label">SYSTEM OVERVIEW · DIGITAL TWIN</span>
+          </div>
+          <div class="research-copy">
+            <div class="research-kicker">
+              <span class="status status-published">Published</span>
+              <span>Journal of Intelligent Manufacturing · 2026</span>
+            </div>
+            <h3>Quasi-real-time digital twin for robotic assembly</h3>
+            <p class="research-authors">
+              <strong>Kaixiang Yao</strong>, Hao Chi, Dingye Chen, Jiwen Zhang
+            </p>
+            <p>
+              A physics-based multi-fidelity framework that brings full-field stress estimation into a
+              cycle-to-cycle supervisory loop for large flexible assemblies. The system combines a
+              non-blocking ROS 2 architecture with mesh-scale optimization to balance fidelity and latency.
+            </p>
+            <div class="result-strip" aria-label="Key results">
+              <span><strong>5.86×</strong> speedup</span>
+              <span><strong>≈10.7 s</strong> end-to-end</span>
+              <span><strong>≤3.3%</strong> error vs. reference</span>
+            </div>
+            <p class="role-note">
+              <span>My role</span> ROS 2 data architecture, linearized contact constraints, mesh-scale
+              analysis, and safety-state integration.
+            </p>
+            <div class="card-links">
+              <a href="https://doi.org/10.1007/s10845-026-02879-3" target="_blank" rel="noreferrer">Paper / DOI ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="research-card reveal">
+          <div class="research-figure figure-cartilage">
+            <img
+              src="assets/cartilage-runtime.jpg"
+              alt="CARTILAGE runtime dataflow from a JAX controller through fixed-shape contact state, CUDA queries, a masked Newton loop, and diagnostics"
+            />
+            <span class="figure-label">RUNTIME DATAFLOW · CARTILAGE</span>
+          </div>
+          <div class="research-copy">
+            <div class="research-kicker">
+              <span class="status status-review">Under review</span>
+              <span>CoRL · 2026</span>
+            </div>
+            <h3>CARTILAGE: A convergence-aware rigid–soft contact runtime</h3>
+            <p class="research-authors">
+              <strong>Kaixiang Yao</strong>, Chao Huang, Yanlin Liu, Yao Shen
+            </p>
+            <p>
+              A batched runtime for contact-rich robot learning, connecting fixed-shape simulation state,
+              GPU contact queries, convergence-aware Newton solves, continuous collision detection, and
+              RL-facing diagnostics.
+            </p>
+            <p class="role-note">
+              <span>My role</span> Soft-gripper simulation and learning framework, actuation and contact
+              semantics, RL task design, and contact-fidelity evaluation.
+            </p>
+          </div>
+        </article>
+
+        <article class="research-card reveal">
+          <div class="research-figure figure-gaze">
+            <img
+              src="assets/gaze-fes-overview.png"
+              alt="Gaze-driven grasp restoration system with eye tracking, visual feature extraction, gesture selection, and multichannel electrical stimulation"
+            />
+            <span class="figure-label">PERCEPTION–ACTION LOOP · ASSISTIVE GRASPING</span>
+          </div>
+          <div class="research-copy">
+            <div class="research-kicker">
+              <span class="status status-revision">Under revision</span>
+              <span>IEEE T-MRB · 2026</span>
+            </div>
+            <h3>Gaze-driven perception–action control for grasp restoration</h3>
+            <p class="research-authors"><strong>Kaixiang Yao</strong></p>
+            <p>
+              A gaze-triggered assistive pipeline that combines object recognition, hand-pose estimation,
+              gesture selection, and multi-channel functional electrical stimulation for efficient grasp
+              restoration.
+            </p>
+            <p class="role-note">
+              <span>My role</span> Gaze-intention recognition, temporal filtering, perception integration,
+              and the design of an 8-channel, 54-electrode stimulation sleeve.
+            </p>
+          </div>
+        </article>
+
+        <aside class="current-work reveal" aria-labelledby="current-work-title">
+          <div class="current-work-marker">
+            <span class="signal-dot"></span>
+            CURRENT WORK
+          </div>
+          <div>
+            <h3 id="current-work-title">History-conditioned adaptation for dynamic rope manipulation</h3>
+            <p>
+              At UC Berkeley, I am studying how a robot can use outcomes from previous trials to adapt
+              dynamic manipulation actions across ropes with unseen physical properties. The project
+              combines MJLab/MuJoCo simulation, compact motion primitives, and history-conditioned
+              representations for repeated-trial learning.
+            </p>
+            <span class="current-meta">Advisor: Prof. Masayoshi Tomizuka · 2026—Present</span>
+          </div>
+        </aside>
+      </section>
+
+      <section id="background" class="background section-shell section-rule" aria-labelledby="background-title">
+        <div class="section-index reveal">03 / BACKGROUND</div>
+        <div class="section-heading reveal">
+          <h2 id="background-title">Research Experience</h2>
+          <p>Selected research appointments and education.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2026—NOW</div>
+            <div class="timeline-body">
+              <span class="timeline-place">UC Berkeley</span>
+              <h3>Dynamic rope manipulation</h3>
+              <p>Undergraduate Research Assistant · Advisor: Prof. Masayoshi Tomizuka</p>
+            </div>
+            <span class="timeline-tag">DEFORMABLE OBJECTS</span>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2025—NOW</div>
+            <div class="timeline-body">
+              <span class="timeline-place">Shanghai Jiao Tong University</span>
+              <h3>High-fidelity rigid–soft contact</h3>
+              <p>Undergraduate Research Assistant · Advisor: Prof. Yao Shen</p>
+            </div>
+            <span class="timeline-tag">ROBOT LEARNING</span>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2024—2026</div>
+            <div class="timeline-body">
+              <span class="timeline-place">SUSTech</span>
+              <h3>Eye-tracking and FES-assisted grasping</h3>
+              <p>Undergraduate Research Assistant · Advisor: Prof. Chenglong Fu</p>
+            </div>
+            <span class="timeline-tag">HUMAN–ROBOT INTERACTION</span>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">SUMMER 2025</div>
+            <div class="timeline-body">
+              <span class="timeline-place">Tsinghua University</span>
+              <h3>Digital twin for robotic assembly</h3>
+              <p>Research Intern · Advisor: Jiwen Zhang</p>
+            </div>
+            <span class="timeline-tag">INTELLIGENT MANUFACTURING</span>
+          </article>
+        </div>
+
+        <div class="education-awards reveal">
+          <div class="education-block">
+            <span class="mini-label">EDUCATION</span>
+            <h3>Southern University of Science and Technology</h3>
+            <p>B.Eng. in Robotic Engineering · 2023—2027</p>
+            <div class="stat-pair">
+              <span><strong>3.91</strong> / 4.0 GPA</span>
+              <span><strong>1</strong> / 90 Major Rank</span>
+            </div>
+          </div>
+          <div class="awards-block">
+            <span class="mini-label">SELECTED RECOGNITION</span>
+            <ul>
+              <li>First Prize, Guangdong Provincial Engineering Practice & Innovation Competition <span>2025</span></li>
+              <li>Outstanding Student Scholarship <span>2023—2025</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact contact-minimal section-shell" aria-labelledby="contact-title">
+        <div class="contact-copy reveal">
+          <h2 id="contact-title">Contact</h2>
+          <p>For research collaborations and opportunities.</p>
+        </div>
+        <div class="contact-actions reveal">
+          <button class="button button-light email-link" type="button" data-email>Email ↗</button>
+          <a href="https://www.linkedin.com/in/kaixiang-yao-7763b9421/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="https://github.com/KaixiangYao" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span data-year></span> Kaixiang Yao</span>
+      <span>Robotics Engineering · SUSTech</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
