@@ -253,10 +253,20 @@ p {
 
 .hero-intro {
   max-width: 680px;
-  margin-bottom: 32px;
+  margin-bottom: 12px;
   color: var(--ink-soft);
   font-size: clamp(17px, 1.4vw, 20px);
   line-height: 1.65;
+}
+
+.hero-thesis {
+  max-width: 700px;
+  margin-bottom: 32px;
+  color: var(--ink);
+  font-size: clamp(18px, 1.55vw, 22px);
+  font-weight: 610;
+  line-height: 1.55;
+  letter-spacing: -0.018em;
 }
 
 .hero-intro strong {
@@ -268,7 +278,7 @@ p {
   flex-wrap: wrap;
   gap: 14px;
   align-items: center;
-  margin-bottom: 52px;
+  margin-bottom: 0;
 }
 
 .button {
@@ -317,6 +327,12 @@ p {
   margin-left: 8px;
   font-size: 13px;
   font-weight: 750;
+}
+
+.text-link-secondary {
+  margin-left: 0;
+  color: var(--ink-soft);
+  font-weight: 650;
 }
 
 .hero-meta {
@@ -378,6 +394,36 @@ p {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.14em;
+}
+
+.current-focus {
+  margin-block: 48px;
+}
+
+.current-focus-label {
+  color: var(--acid);
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.current-focus h2 {
+  max-width: 470px;
+  margin: 16px 0 20px;
+  font-family: var(--font-soft-display);
+  font-size: clamp(32px, 3.2vw, 50px);
+  font-weight: 640;
+  line-height: 1.03;
+  letter-spacing: -0.045em;
+}
+
+.current-focus p {
+  max-width: 430px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 15px;
+  line-height: 1.55;
 }
 
 .interest-list {
@@ -753,7 +799,7 @@ p {
 
 .result-strip {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin: 14px 0 24px;
   border-block: 1px solid var(--line);
 }
@@ -832,6 +878,35 @@ p {
 .current-work p {
   max-width: 820px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.research-questions {
+  display: grid;
+  max-width: 860px;
+  padding: 0;
+  margin: 26px 0 0;
+  gap: 0;
+  list-style: none;
+  counter-reset: questions;
+}
+
+.research-questions li {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  padding: 16px 0;
+  color: rgba(255, 255, 255, 0.74);
+  border-top: 1px solid var(--line-dark);
+  counter-increment: questions;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.research-questions li::before {
+  color: var(--acid);
+  content: "0" counter(questions);
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.12em;
 }
 
 .current-meta {
@@ -1022,6 +1097,10 @@ p {
   justify-content: space-between;
   color: var(--ink-soft);
   font-size: 11px;
+}
+
+.site-footer a {
+  color: inherit;
 }
 
 .print-link,
@@ -1425,6 +1504,10 @@ p {
     font-size: 16px;
   }
 
+  .hero-thesis {
+    font-size: 18px;
+  }
+
   .hero-actions {
     align-items: stretch;
     flex-direction: column;
@@ -1461,6 +1544,18 @@ p {
 
   .interest-list {
     margin-block: 28px;
+  }
+
+  .current-focus {
+    margin-block: 34px;
+  }
+
+  .current-focus h2 {
+    font-size: 34px;
+  }
+
+  .current-focus p {
+    font-size: 14px;
   }
 
   .interest-list span {
