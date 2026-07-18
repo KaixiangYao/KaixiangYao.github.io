@@ -205,7 +205,6 @@ p {
 }
 
 .eyebrow,
-.mini-label,
 .section-index,
 .figure-label,
 .visual-heading,
@@ -971,75 +970,6 @@ p {
   text-align: center;
 }
 
-.education-awards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1px;
-  margin: 76px 0 0 calc(25% + 10px);
-  overflow: hidden;
-  background: var(--line);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-}
-
-.education-block,
-.awards-block {
-  padding: 38px;
-  background: var(--paper-bright);
-}
-
-.mini-label {
-  display: block;
-  margin-bottom: 24px;
-  color: var(--blue);
-}
-
-.education-block h3 {
-  max-width: 520px;
-  margin-bottom: 8px;
-  font-size: 24px;
-  line-height: 1.2;
-  letter-spacing: -0.035em;
-}
-
-.education-block > p {
-  color: var(--ink-soft);
-}
-
-.stat-pair {
-  display: flex;
-  gap: 26px;
-  margin-top: 28px;
-  color: var(--ink-soft);
-  font-size: 12px;
-}
-
-.stat-pair strong {
-  color: var(--ink);
-  font-size: 22px;
-}
-
-.awards-block ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.awards-block li {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--line);
-  font-size: 14px;
-}
-
-.awards-block li span {
-  flex: 0 0 auto;
-  color: var(--ink-soft);
-  font-size: 11px;
-}
-
 .contact {
   display: grid;
   grid-template-columns: 1.35fr 0.65fr;
@@ -1591,7 +1521,6 @@ p {
   .about,
   .section-heading,
   .timeline-item,
-  .education-awards,
   .contact,
   .current-work {
     grid-template-columns: 1fr;
@@ -1612,8 +1541,7 @@ p {
   }
 
   .section-heading,
-  .timeline,
-  .education-awards {
+  .timeline {
     margin-left: 0;
   }
 
@@ -1667,20 +1595,6 @@ p {
   .timeline-tag {
     justify-self: start;
     margin-top: 10px;
-  }
-
-  .education-awards {
-    margin-top: 54px;
-  }
-
-  .education-block,
-  .awards-block {
-    padding: 28px 22px;
-  }
-
-  .stat-pair {
-    flex-direction: column;
-    gap: 8px;
   }
 
   .contact {
