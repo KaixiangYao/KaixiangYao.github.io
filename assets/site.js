@@ -5,9 +5,21 @@ const emailCodes = [
 
 const emailAddress = String.fromCharCode(...emailCodes);
 
+const cvPathCodes = [
+  97, 115, 115, 101, 116, 115, 47, 107, 121, 45, 100, 111, 99, 117, 109, 101, 110, 116, 45,
+  50, 48, 50, 54, 46, 112, 100, 102,
+];
+const cvPath = String.fromCharCode(...cvPathCodes);
+
 document.querySelectorAll("[data-email]").forEach((link) => {
   link.addEventListener("click", () => {
     window.location.href = `mailto:${emailAddress}`;
+  });
+});
+
+document.querySelectorAll("[data-cv]").forEach((link) => {
+  link.addEventListener("click", () => {
+    window.open(cvPath, "_blank", "noopener,noreferrer");
   });
 });
 
