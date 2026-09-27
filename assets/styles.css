@@ -281,35 +281,6 @@ section > p {
   margin-bottom: 0;
 }
 
-.preprints {
-  margin-top: -7px;
-}
-
-.preprints h2 {
-  font-size: 1.32rem;
-}
-
-.preprint-item {
-  padding: 15px 0;
-}
-
-.preprint-item + .preprint-item {
-  border-top: 1px solid var(--line);
-}
-
-.preprint-item h3 {
-  margin-bottom: 6px;
-}
-
-.preprint-item h3 a {
-  color: var(--heading);
-}
-
-.preprint-item .authors,
-.preprint-item .venue {
-  margin-bottom: 3px;
-}
-
 #experience {
   padding-top: 2px;
   border-top: 1px solid var(--line);
@@ -342,27 +313,8 @@ section > p {
   font-size: 0.93rem;
 }
 
-.experience-meta {
+.experience-detail {
   color: var(--muted);
-}
-
-.experience-item .experience-project {
-  margin-top: 8px;
-  color: var(--heading);
-  font-weight: 650;
-  line-height: 1.42;
-}
-
-.experience-bullets {
-  margin: 8px 0 0;
-  padding-left: 1.15rem;
-  color: #46535e;
-  font-size: 0.91rem;
-  line-height: 1.52;
-}
-
-.experience-bullets li + li {
-  margin-top: 5px;
 }
 
 footer {
