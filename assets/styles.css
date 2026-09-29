@@ -260,6 +260,18 @@ section > p {
   color: var(--heading);
 }
 
+.authors a,
+.preprint-meta a {
+  color: inherit;
+}
+
+.authors a:hover,
+.authors a:focus-visible,
+.preprint-meta a:hover,
+.preprint-meta a:focus-visible {
+  color: var(--accent-dark);
+}
+
 .author-note {
   display: block;
   margin-top: 1px;
