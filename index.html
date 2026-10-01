@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Kaixiang Yao is a Robotics Engineering undergraduate at SUSTech working on robot learning, embodied AI, and physical manipulation."
+      content="Kaixiang Yao is a Robotics Engineering undergraduate at SUSTech and a visiting undergraduate researcher at UC Berkeley working on robot learning, embodied AI, and physical manipulation."
     />
     <meta name="author" content="Kaixiang Yao" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -14,10 +14,14 @@
     <meta property="og:title" content="Kaixiang Yao" />
     <meta
       property="og:description"
-      content="Research in robot learning, embodied AI, and physical manipulation."
+      content="Robotics Engineering undergraduate at SUSTech and visiting undergraduate researcher at UC Berkeley working on robot learning, embodied AI, and physical manipulation."
     />
     <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://kaixiangyao.github.io/" />
+    <meta property="og:site_name" content="Kaixiang Yao" />
+    <meta property="profile:first_name" content="Kaixiang" />
+    <meta property="profile:last_name" content="Yao" />
+    <meta property="profile:username" content="KaixiangYao" />
 
     <title>Kaixiang Yao</title>
     <link rel="canonical" href="https://kaixiangyao.github.io/" />
@@ -28,28 +32,138 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Kaixiang Yao",
-        "alternateName": "KaixiangYao",
-        "url": "https://kaixiangyao.github.io/",
-        "jobTitle": "Robotics Engineering Undergraduate Researcher",
-        "affiliation": {
-          "@type": "CollegeOrUniversity",
-          "name": "Southern University of Science and Technology",
-          "alternateName": "SUSTech"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/in/kaixiang-yao-7763b9421/",
-          "https://scholar.google.com/citations?user=54E0Um0AAAAJ"
-        ],
-        "knowsAbout": [
-          "Robot Learning",
-          "Embodied AI",
-          "Robot Manipulation",
-          "Dynamic Rope Manipulation",
-          "Sim-to-Real Learning",
-          "Rigid-Soft Contact",
-          "Assistive Robotics"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://kaixiangyao.github.io/#website",
+            "url": "https://kaixiangyao.github.io/",
+            "name": "Kaixiang Yao",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://kaixiangyao.github.io/#profile-page",
+            "url": "https://kaixiangyao.github.io/",
+            "name": "Kaixiang Yao",
+            "dateCreated": "2026-07-15",
+            "dateModified": "2026-09-30",
+            "isPartOf": {
+              "@id": "https://kaixiangyao.github.io/#website"
+            },
+            "mainEntity": {
+              "@id": "https://kaixiangyao.github.io/#kaixiang-yao"
+            },
+            "hasPart": [
+              {
+                "@id": "https://doi.org/10.1007/s10845-026-02879-3"
+              },
+              {
+                "@id": "https://arxiv.org/abs/2609.23432"
+              },
+              {
+                "@id": "https://arxiv.org/abs/2608.14162"
+              },
+              {
+                "@id": "https://arxiv.org/abs/2609.13446"
+              },
+              {
+                "@id": "https://arxiv.org/abs/2609.13449"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://kaixiangyao.github.io/#kaixiang-yao",
+            "name": "Kaixiang Yao",
+            "alternateName": "KaixiangYao",
+            "url": "https://kaixiangyao.github.io/",
+            "mainEntityOfPage": {
+              "@id": "https://kaixiangyao.github.io/#profile-page"
+            },
+            "description": "Robotics Engineering undergraduate researcher working on robot learning, embodied AI, and physical manipulation.",
+            "jobTitle": "Undergraduate Researcher in Robotics",
+            "affiliation": [
+              {
+                "@type": "CollegeOrUniversity",
+                "@id": "https://www.sustech.edu.cn/en/#organization",
+                "name": "Southern University of Science and Technology",
+                "alternateName": "SUSTech",
+                "url": "https://www.sustech.edu.cn/en/"
+              },
+              {
+                "@type": "CollegeOrUniversity",
+                "@id": "https://www.berkeley.edu/#organization",
+                "name": "University of California, Berkeley",
+                "alternateName": "UC Berkeley",
+                "url": "https://www.berkeley.edu/"
+              }
+            ],
+            "sameAs": [
+              "https://www.linkedin.com/in/kaixiang-yao-7763b9421/",
+              "https://scholar.google.com/citations?user=54E0Um0AAAAJ"
+            ],
+            "knowsAbout": [
+              "Robot Learning",
+              "Embodied AI",
+              "Robot Manipulation",
+              "Dynamic Rope Manipulation",
+              "Sim-to-Real Learning",
+              "Rigid-Soft Contact",
+              "Assistive Robotics"
+            ]
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://doi.org/10.1007/s10845-026-02879-3",
+            "url": "https://doi.org/10.1007/s10845-026-02879-3",
+            "headline": "Quasi-real-time digital twin for robotic assembly: a physics-based multi-fidelity framework",
+            "author": {
+              "@id": "https://kaixiangyao.github.io/#kaixiang-yao"
+            },
+            "isPartOf": {
+              "@type": "Periodical",
+              "name": "Journal of Intelligent Manufacturing"
+            }
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://arxiv.org/abs/2609.23432",
+            "url": "https://arxiv.org/abs/2609.23432",
+            "sameAs": "https://ropeformer.github.io/",
+            "headline": "RopeFormer: Cross-Trial Adaptation from Interaction History for Dynamic Rope Manipulation",
+            "datePublished": "2026-09-20",
+            "author": {
+              "@id": "https://kaixiangyao.github.io/#kaixiang-yao"
+            }
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://arxiv.org/abs/2608.14162",
+            "url": "https://arxiv.org/abs/2608.14162",
+            "headline": "TOGEARI: Interaction-Space Preconditioning for Condensed Finite-Element Systems with IPC Contact",
+            "datePublished": "2026-08-14",
+            "author": {
+              "@id": "https://kaixiangyao.github.io/#kaixiang-yao"
+            }
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://arxiv.org/abs/2609.13446",
+            "url": "https://arxiv.org/abs/2609.13446",
+            "headline": "RUPA: Nonlinear volume consistency, constraint geometry and singular penalty limits in finite elements",
+            "author": {
+              "@id": "https://kaixiangyao.github.io/#kaixiang-yao"
+            }
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://arxiv.org/abs/2609.13449",
+            "url": "https://arxiv.org/abs/2609.13449",
+            "headline": "MORTIS: Quadrature-compatible cofactor gauges and optimal material margins in finite elasticity",
+            "author": {
+              "@id": "https://kaixiangyao.github.io/#kaixiang-yao"
+            }
+          }
         ]
       }
     </script>
@@ -86,12 +200,12 @@
             <a
               href="https://www.linkedin.com/in/kaixiang-yao-7763b9421/"
               target="_blank"
-              rel="noreferrer"
+              rel="me noreferrer"
             >LinkedIn</a>
             <a
               href="https://scholar.google.com/citations?user=54E0Um0AAAAJ"
               target="_blank"
-              rel="noreferrer"
+              rel="me noreferrer"
             >Google Scholar</a>
           </div>
         </div>
