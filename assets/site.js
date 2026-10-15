@@ -28,14 +28,11 @@ document.querySelectorAll("[data-year]").forEach((element) => {
 });
 
 const preview = document.querySelector("#ropeformer-preview");
-const dialog = document.querySelector(".media-dialog");
-const fullImage = dialog.querySelector("[data-full-image]");
-const originalLink = dialog.querySelector("[data-media-original]");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 let previewVisible = false;
 
 function syncPreview() {
-  if (previewVisible && !reducedMotion.matches && !document.hidden && !dialog.open) {
+  if (previewVisible && !reducedMotion.matches && !document.hidden) {
     preview.play().catch(() => {});
   } else {
     preview.pause();
@@ -48,24 +45,3 @@ new IntersectionObserver(([entry]) => {
 }, { threshold: 0.15 }).observe(preview);
 document.addEventListener("visibilitychange", syncPreview);
 reducedMotion.addEventListener("change", syncPreview);
-
-document.querySelectorAll("[data-image-expand]").forEach((link) => {
-  link.addEventListener("click", (event) => {
-    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-    event.preventDefault();
-    fullImage.hidden = false;
-    fullImage.src = link.href;
-    fullImage.alt = link.querySelector("img").alt;
-    originalLink.href = link.href;
-    dialog.showModal();
-    syncPreview();
-  });
-});
-dialog.querySelector("[data-media-close]").addEventListener("click", () => dialog.close());
-dialog.addEventListener("click", (event) => {
-  if (event.target !== dialog) return;
-  const rect = dialog.getBoundingClientRect();
-  if (event.clientX < rect.left || event.clientX > rect.right ||
-      event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
-});
-dialog.addEventListener("close", syncPreview);
