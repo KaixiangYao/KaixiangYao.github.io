@@ -9,7 +9,7 @@
     />
     <meta name="author" content="Kaixiang Yao" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta name="theme-color" content="#f6f6f2" />
+    <meta name="theme-color" content="#ffffff" />
 
     <meta property="og:title" content="Kaixiang Yao" />
     <meta
@@ -26,7 +26,8 @@
     <title>Kaixiang Yao</title>
     <link rel="canonical" href="https://kaixiangyao.github.io/" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="preload" href="assets/fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="assets/styles.css?v=20261014" />
     <script src="assets/site.js" defer></script>
 
     <script type="application/ld+json">
@@ -46,7 +47,7 @@
             "url": "https://kaixiangyao.github.io/",
             "name": "Kaixiang Yao",
             "dateCreated": "2026-07-15",
-            "dateModified": "2026-10-11",
+            "dateModified": "2026-10-14",
             "isPartOf": {
               "@id": "https://kaixiangyao.github.io/#website"
             },
@@ -189,64 +190,34 @@
     <a class="skip-link" href="#content">Skip to content</a>
 
     <div class="page">
-      <aside class="profile" aria-label="Profile">
-        <div class="profile-inner">
-          <h1>Kaixiang Yao</h1>
-          <p class="profile-role">Undergraduate Student in Robotics Engineering</p>
-          <p class="profile-affiliation">
-            <a href="https://www.sustech.edu.cn/en/" target="_blank" rel="noreferrer">
-              Southern University of Science and Technology
-            </a>
-          </p>
-
-          <div class="profile-note">
-            Visiting Undergraduate Researcher<br />
-            University of California, Berkeley
-          </div>
-
-          <nav class="profile-nav" aria-label="Page sections">
-            <a href="#about">About</a>
-            <a href="#publications">Publications</a>
-            <a href="#experience">Experience</a>
-          </nav>
-
-          <div class="profile-links" aria-label="External links">
-            <button class="plain-link" type="button" data-email>Email</button>
-            <button class="plain-link" type="button" data-cv>CV</button>
-            <a
-              href="https://www.linkedin.com/in/kaixiang-yao-7763b9421/"
-              target="_blank"
-              rel="me noreferrer"
-            >LinkedIn</a>
-            <a
-              href="https://scholar.google.com/citations?user=54E0Um0AAAAJ"
-              target="_blank"
-              rel="me noreferrer"
-            >Google Scholar</a>
-          </div>
-        </div>
-      </aside>
+      <header class="intro" id="about">
+        <h1>Kaixiang Yao</h1>
+        <p>
+          I am a Robotics Engineering undergraduate at
+          <a href="https://www.sustech.edu.cn/en/">Southern University of Science and Technology (SUSTech)</a>,
+          advised by <a href="https://www.sustech.edu.cn/en/faculties/fuchenglong.html">Prof. Chenglong Fu</a>.
+          I am also a visiting undergraduate researcher at
+          <a href="https://www.berkeley.edu/">UC Berkeley</a>, working with
+          <a href="https://me.berkeley.edu/people/masayoshi-tomizuka/">Prof. Masayoshi Tomizuka</a>
+          and <a href="https://thomaschen98.github.io/">Yuxin Chen</a>.
+        </p>
+        <p>
+          My research interests are in robot learning and embodied AI for physical manipulation,
+          especially contact-rich, deformable, and dexterous tasks. My previous work spans
+          rigid-soft contact, physics-based digital twins, and assistive manipulation.
+        </p>
+        <nav class="profile-links" aria-label="Contact and profiles">
+          <button class="plain-link" type="button" data-email>Email</button>
+          <span aria-hidden="true">/</span>
+          <button class="plain-link" type="button" data-cv>CV</button>
+          <span aria-hidden="true">/</span>
+          <a href="https://scholar.google.com/citations?user=54E0Um0AAAAJ" target="_blank" rel="me noreferrer">Google Scholar</a>
+          <span aria-hidden="true">/</span>
+          <a href="https://www.linkedin.com/in/kaixiang-yao-7763b9421/" target="_blank" rel="me noreferrer">LinkedIn</a>
+        </nav>
+      </header>
 
       <main id="content">
-        <section id="about" aria-labelledby="about-heading">
-          <h2 id="about-heading">About</h2>
-          <p>
-            I am a Robotics Engineering undergraduate at SUSTech and a visiting undergraduate
-            researcher at UC Berkeley. My research interests are in robot learning, embodied AI,
-            and manipulation, with an emphasis on reliable interaction with the physical world.
-          </p>
-          <p>
-            My previous work spans rigid-soft contact, physics-based digital twins, and assistive
-            manipulation. I use simulation, mechanics, perception, and control to study these
-            problems.
-          </p>
-        </section>
-
-        <section class="interests" aria-labelledby="interests-heading">
-          <h2 id="interests-heading">Research Interests</h2>
-          <p>Robot learning and embodied AI for physical manipulation, especially contact-rich, deformable, and dexterous tasks.</p>
-        </section>
-
         <section id="publications" aria-labelledby="publications-heading">
           <h2 id="publications-heading">Selected Publications</h2>
 
@@ -319,12 +290,12 @@
           </article>
 
           <article class="publication">
-            <div class="publication-image" aria-hidden="true">
+            <a class="publication-image" href="assets/gaze-fes-overview.png" target="_blank" rel="noreferrer" aria-label="View the grasp restoration system overview">
               <img
                 src="assets/gaze-fes-overview.png"
-                alt=""
+                alt="Overview of gaze sensing, grasp recognition, and multichannel FES control"
               />
-            </div>
+            </a>
             <div class="publication-body">
               <h3>Gaze-driven perception-action control of multi-channel FES for efficient grasp restoration</h3>
               <p class="authors">
@@ -415,7 +386,7 @@
         </section>
 
         <footer>
-          <p>&copy; <span data-year>2026</span> Kaixiang Yao</p>
+          <p>&copy; <span data-year>2026</span> Kaixiang Yao · Layout adapted from <a href="https://jonbarron.info/">Jon Barron</a>.</p>
         </footer>
       </main>
     </div>
