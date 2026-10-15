@@ -27,8 +27,8 @@
     <link rel="canonical" href="https://kaixiangyao.github.io/" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preload" href="assets/fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="assets/styles.css?v=20261014" />
-    <script src="assets/site.js" defer></script>
+    <link rel="stylesheet" href="assets/styles.css?v=20261014-media" />
+    <script src="assets/site.js?v=20261014-media" defer></script>
 
     <script type="application/ld+json">
       {
@@ -224,13 +224,14 @@
           <article class="publication">
             <a
               class="publication-image"
-              href="https://doi.org/10.1007/s10845-026-02879-3"
+              href="assets/digital-twin-overview.svg"
+              data-image-expand
               target="_blank"
               rel="noreferrer"
-              aria-label="Open the digital twin paper"
+              aria-label="Enlarge the digital twin overview"
             >
               <img
-                src="assets/digital-twin-overview.png"
+                src="assets/digital-twin-overview.svg"
                 alt="Overview of the physical assembly, asynchronous digital twin, and safety feedback loop"
               />
             </a>
@@ -253,18 +254,26 @@
           </article>
 
           <article class="publication">
-            <a
-              class="publication-image publication-image--cover"
-              href="https://ropeformer.github.io/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Open the RopeFormer project page"
-            >
-              <img
-                src="https://ropeformer.github.io/static/images/teaser.jpg"
-                alt="Unitree H1-2 performing dynamic rope manipulation"
-              />
-            </a>
+            <figure class="publication-media">
+              <a href="assets/ropeformer-tasks.mp4" data-video-expand aria-label="Enlarge the RopeFormer task demonstration">
+                <video
+                  id="ropeformer-preview"
+                  src="assets/ropeformer-tasks.mp4"
+                  poster="assets/ropeformer-poster.jpg"
+                  width="960" height="640"
+                  muted loop playsinline preload="metadata"
+                  aria-label="Unitree H1-2 performing rope swing, bimanual twirl, and transient whip"
+                ></video>
+              </a>
+              <figcaption>
+                <span data-video-task>Rope swing</span>
+                <span class="video-actions">
+                  <button class="plain-link" type="button" data-video-toggle aria-label="Play RopeFormer preview">Play</button>
+                  <span aria-hidden="true">/</span>
+                  <a href="assets/ropeformer-tasks.mp4" data-video-expand>Enlarge</a>
+                </span>
+              </figcaption>
+            </figure>
             <div class="publication-body">
               <h3>
                 <a href="https://arxiv.org/abs/2609.23432" target="_blank" rel="noreferrer">
@@ -290,9 +299,9 @@
           </article>
 
           <article class="publication">
-            <a class="publication-image" href="assets/gaze-fes-overview.png" target="_blank" rel="noreferrer" aria-label="View the grasp restoration system overview">
+            <a class="publication-image" href="assets/gaze-fes-overview.svg" data-image-expand target="_blank" rel="noreferrer" aria-label="Enlarge the grasp restoration system overview">
               <img
-                src="assets/gaze-fes-overview.png"
+                src="assets/gaze-fes-overview.svg"
                 alt="Overview of gaze sensing, grasp recognition, and multichannel FES control"
               />
             </a>
@@ -390,5 +399,13 @@
         </footer>
       </main>
     </div>
+    <dialog class="media-dialog" aria-label="Publication media">
+      <div class="media-toolbar">
+        <a data-media-original target="_blank" rel="noreferrer">Open original</a>
+        <button class="plain-link" type="button" data-media-close autofocus>Close</button>
+      </div>
+      <img data-full-image hidden alt="" />
+      <video data-full-video hidden controls muted loop playsinline preload="none" aria-label="RopeFormer task demonstration"></video>
+    </dialog>
   </body>
 </html>
