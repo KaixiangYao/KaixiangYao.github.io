@@ -27,8 +27,8 @@
     <link rel="canonical" href="https://kaixiangyao.github.io/" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preload" href="assets/fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="assets/styles.css?v=20261014-media" />
-    <script src="assets/site.js?v=20261014-media" defer></script>
+    <link rel="stylesheet" href="assets/styles.css?v=20261014-service" />
+    <script src="assets/site.js?v=20261014-service" defer></script>
 
     <script type="application/ld+json">
       {
@@ -254,8 +254,7 @@
           </article>
 
           <article class="publication">
-            <figure class="publication-media">
-              <a href="assets/ropeformer-tasks.mp4" data-video-expand aria-label="Enlarge the RopeFormer task demonstration">
+            <div class="publication-media">
                 <video
                   id="ropeformer-preview"
                   src="assets/ropeformer-tasks.mp4"
@@ -264,16 +263,7 @@
                   muted loop playsinline preload="metadata"
                   aria-label="Unitree H1-2 performing rope swing, bimanual twirl, and transient whip"
                 ></video>
-              </a>
-              <figcaption>
-                <span data-video-task>Rope swing</span>
-                <span class="video-actions">
-                  <button class="plain-link" type="button" data-video-toggle aria-label="Play RopeFormer preview">Play</button>
-                  <span aria-hidden="true">/</span>
-                  <a href="assets/ropeformer-tasks.mp4" data-video-expand>Enlarge</a>
-                </span>
-              </figcaption>
-            </figure>
+            </div>
             <div class="publication-body">
               <h3>
                 <a href="https://arxiv.org/abs/2609.23432" target="_blank" rel="noreferrer">
@@ -394,6 +384,11 @@
           </div>
         </section>
 
+        <section id="service" aria-labelledby="service-heading">
+          <h2 id="service-heading">Service</h2>
+          <p class="service-entry">Reviewer, CoRL 2026</p>
+        </section>
+
         <footer>
           <p>&copy; <span data-year>2026</span> Kaixiang Yao · Layout adapted from <a href="https://jonbarron.info/">Jon Barron</a>.</p>
         </footer>
@@ -405,7 +400,6 @@
         <button class="plain-link" type="button" data-media-close autofocus>Close</button>
       </div>
       <img data-full-image hidden alt="" />
-      <video data-full-video hidden controls muted loop playsinline preload="none" aria-label="RopeFormer task demonstration"></video>
     </dialog>
   </body>
 </html>

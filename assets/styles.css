@@ -54,14 +54,10 @@ h3 { margin: 0; font-size: 15px; font-weight: 700; line-height: 1.4; }
 .publication-image { cursor: zoom-in; }
 .publication-media { min-width: 0; margin: 0; }
 .publication-media video { display: block; width: 100%; height: auto; background: #111; }
-.publication-media > a { display: block; cursor: zoom-in; }
-.publication-media figcaption { display: flex; justify-content: space-between; gap: 8px; margin-top: 6px; font-size: 12px; color: #555; }
-.video-actions { display: inline-flex; gap: 7px; }
 .media-dialog { width: min(1440px, 96vw); max-width: 96vw; max-height: 94dvh; padding: 16px; border: 0; background: #fff; }
 .media-dialog::backdrop { background: rgb(0 0 0 / .7); }
 .media-toolbar { display: flex; justify-content: space-between; margin-bottom: 14px; font-size: 14px; }
 .media-dialog img { display: block; width: 100%; max-height: calc(94dvh - 80px); object-fit: contain; }
-.media-dialog video { display: block; width: 100%; max-height: calc(94dvh - 80px); background: #111; }
 .media-dialog [hidden] { display: none !important; }
 body:has(.media-dialog[open]) { overflow: hidden; }
 .publication-body { min-width: 0; }
@@ -83,6 +79,7 @@ sup { font-size: .75em; line-height: 0; }
 .experience-date { color: #606060; font-size: 14px; margin: 1px 0 0; }
 .experience-item p:not(.experience-date) { margin: 2px 0 0; }
 .experience-detail { color: #555; font-size: 14px; }
+.service-entry { margin: 0 20px; }
 footer { padding: 8px 20px 30px; font-size: 12px; color: #777; text-align: right; }
 footer p { margin: 0; }
 @media (max-width: 600px) {
@@ -94,6 +91,7 @@ footer p { margin: 0; }
   .publication-image, .publication-media { width: min(100%, 340px); margin: 0 auto; }
   .preprints { margin: 16px 0 0; }
   .experience-list { padding: 0; }
+  .service-entry { margin: 0; }
   .experience-item { grid-template-columns: 1fr; gap: 3px; }
   footer { padding-left: 0; padding-right: 0; text-align: left; }
 }
