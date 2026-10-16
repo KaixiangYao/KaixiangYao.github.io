@@ -40,9 +40,7 @@ button { font: inherit; }
 .skip-link { position: absolute; top: -60px; left: 16px; background: #fff; padding: 8px; }
 .skip-link:focus { top: 8px; }
 .page { width: min(960px, 100%); margin: 0 auto; padding: 0 20px; }
-.intro { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 40px; align-items: center; margin: 0 auto; padding: 44px 20px 36px; }
-.intro-copy { min-width: 0; }
-.profile-photo { display: block; width: 260px; height: 320px; object-fit: cover; object-position: 50% 40%; }
+.intro { max-width: 800px; margin: 0 auto; padding: 44px 20px 32px; }
 h1 { margin: 0 0 23px; text-align: center; font-size: 32px; font-weight: 400; line-height: 1.2; }
 p { margin: 0 0 12px; }
 .profile-links { display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 7px 13px; margin-top: 19px; }
@@ -92,9 +90,4 @@ footer p { margin: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-}
-
-@media (max-width: 650px) {
-  .intro { grid-template-columns: 1fr; gap: 24px; }
-  .profile-photo { grid-row: 1; justify-self: center; width: 220px; height: 280px; }
 }
