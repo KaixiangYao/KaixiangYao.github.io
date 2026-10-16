@@ -59,14 +59,6 @@ h3 { margin: 0; font-size: 15px; font-weight: 700; line-height: 1.4; }
 .author-note { display: block; font-size: 13px; color: #606060; }
 sup { font-size: .75em; line-height: 0; }
 .summary { margin: 10px 0 0; line-height: 1.5; }
-.publication-links { margin: 6px 0 0; }
-.publication-links a + a::before { content: "/"; display: inline-block; margin: 0 8px 0 5px; color: #777; }
-.preprints { margin: 25px 20px 0; }
-.preprints > h3 { font-size: 22px; font-weight: 400; margin-bottom: 17px; }
-.preprint-list { list-style: none; padding: 0; margin: 0; }
-.preprint-list li { margin: 0 0 18px; }
-.preprint-list > li > a { font-weight: 700; }
-.preprint-meta { display: block; margin-top: 3px; font-size: 14px; line-height: 1.5; }
 .experience-list { padding: 4px 20px 0; }
 .experience-item { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 20px; padding: 12px 0; }
 .experience-date { color: #606060; font-size: 14px; margin: 1px 0 0; }
@@ -82,7 +74,6 @@ footer p { margin: 0; }
   h2 { margin-left: 0; margin-right: 0; }
   .publication { grid-template-columns: 1fr; gap: 15px; padding: 18px 0 24px; }
   .publication-image, .publication-media { width: min(100%, 340px); margin: 0 auto; }
-  .preprints { margin: 16px 0 0; }
   .experience-list { padding: 0; }
   .service-entry { margin: 0; }
   .experience-item { grid-template-columns: 1fr; gap: 3px; }
