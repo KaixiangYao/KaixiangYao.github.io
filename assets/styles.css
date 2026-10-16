@@ -59,6 +59,8 @@ h3 { margin: 0; font-size: 15px; font-weight: 700; line-height: 1.4; }
 .author-note { display: block; font-size: 13px; color: #606060; }
 sup { font-size: .75em; line-height: 0; }
 .summary { margin: 10px 0 0; line-height: 1.5; }
+.publication-links { margin: 6px 0 0; }
+.publication-links a + a::before { content: "/"; display: inline-block; margin: 0 8px 0 5px; color: #777; }
 .experience-list { padding: 4px 20px 0; }
 .experience-item { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 20px; padding: 12px 0; }
 .experience-date { color: #606060; font-size: 14px; margin: 1px 0 0; }
