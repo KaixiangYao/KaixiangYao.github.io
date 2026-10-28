@@ -40,7 +40,9 @@ button { font: inherit; }
 .skip-link { position: absolute; top: -60px; left: 16px; background: #fff; padding: 8px; }
 .skip-link:focus { top: 8px; }
 .page { width: min(960px, 100%); margin: 0 auto; padding: 0 20px; }
-.intro { max-width: 800px; margin: 0 auto; padding: 44px 20px 32px; }
+.intro { display: grid; grid-template-columns: minmax(0, 1fr) 240px; align-items: center; gap: 32px; margin: 0 auto; padding: 44px 20px 32px; }
+.intro-copy { min-width: 0; }
+.profile-photo { display: block; width: 240px; height: 300px; object-fit: cover; object-position: center bottom; }
 h1 { margin: 0 0 23px; text-align: center; font-size: 32px; font-weight: 400; line-height: 1.2; }
 p { margin: 0 0 12px; }
 .profile-links { display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 7px 13px; margin-top: 19px; }
@@ -73,7 +75,8 @@ footer { padding: 8px 20px 30px; font-size: 12px; color: #777; text-align: right
 footer p { margin: 0; }
 @media (max-width: 800px) {
   .page { padding: 0 20px; }
-  .intro { padding: 32px 0 28px; }
+  .intro { grid-template-columns: 1fr; gap: 24px; padding: 32px 0 28px; }
+  .profile-photo { width: 220px; height: 275px; margin: 0 auto; }
   h1 { margin-bottom: 21px; }
   h2 { margin-left: 0; margin-right: 0; }
   .publication { grid-template-columns: 1fr; gap: 15px; padding: 18px 0 24px; }
