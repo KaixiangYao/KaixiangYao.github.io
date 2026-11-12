@@ -62,7 +62,7 @@ h3 { margin: 0; font-size: 15px; font-weight: 700; line-height: 1.4; }
 .venue-metrics { display: block; margin-top: 2px; color: #606060; font-size: 13px; }
 .author-note { display: block; font-size: 13px; color: #606060; }
 sup { font-size: .75em; line-height: 0; }
-.publication-award { margin: 8px 0 0; color: #943b43; font-size: 14px; line-height: 1.45; }
+.publication-award { margin: 8px 0 0; color: #805b12; font-size: 14px; line-height: 1.45; }
 .publication-links { margin: 6px 0 0; }
 .publication-links a + a::before { content: "/"; display: inline-block; margin: 0 8px 0 5px; color: #777; }
 .experience-list { padding: 4px 20px 0; }
