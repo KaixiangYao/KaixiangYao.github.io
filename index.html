@@ -28,7 +28,7 @@
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preload" href="assets/fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="assets/styles.css?v=20261112-award-gold" />
-    <script src="assets/site.js?v=20261113-email" defer></script>
+    <script src="assets/site.js?v=20261125-atlas" defer></script>
 
     <script type="application/ld+json">
       {
@@ -47,7 +47,7 @@
             "url": "https://kaixiangyao.github.io/",
             "name": "Kaixiang Yao",
             "dateCreated": "2026-07-15",
-            "dateModified": "2026-11-24",
+            "dateModified": "2026-11-25",
             "isPartOf": {
               "@id": "https://kaixiangyao.github.io/#website"
             },
@@ -55,6 +55,9 @@
               "@id": "https://kaixiangyao.github.io/#kaixiang-yao"
             },
             "hasPart": [
+              {
+                "@id": "https://atlas-humanoid.github.io/"
+              },
               {
                 "@id": "https://doi.org/10.1007/s10845-026-02879-3"
               },
@@ -106,6 +109,15 @@
               "Rigid-Soft Contact",
               "Assistive Robotics"
             ]
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "@id": "https://atlas-humanoid.github.io/",
+            "url": "https://atlas-humanoid.github.io/paper/atlas_tech_report.pdf",
+            "headline": "ATLAS: Agentic Harness for Whole-Body Intelligence from Human Video",
+            "author": {
+              "@id": "https://kaixiangyao.github.io/#kaixiang-yao"
+            }
           },
           {
             "@type": "ScholarlyArticle",
@@ -190,6 +202,35 @@
           <h2 id="publications-heading">Selected Publications</h2>
 
           <article class="publication">
+            <div class="publication-media">
+              <video
+                id="atlas-preview"
+                src="assets/atlas-preview.mp4"
+                poster="assets/atlas-poster.jpg"
+                width="960" height="540"
+                muted loop playsinline preload="metadata"
+                aria-label="ATLAS humanoid climbing stairs and picking up a paper ball"
+              ></video>
+            </div>
+            <div class="publication-body">
+              <h3>ATLAS: Agentic Harness for Whole-Body Intelligence from Human Video</h3>
+              <p class="authors">
+                Junli Ren<sup>*</sup>, <strong>Kaixiang Yao<sup>*</sup></strong>, Junfeng Long<sup>*</sup>,
+                Tao Huang, Huayi Wang, Yuxiao Chen, Wenhao Ding, Yan Wang, Wenjie Luo,
+                Boris Ivanovic, Ping Luo, Masayoshi Tomizuka, Pieter Abbeel, Marco Pavone,
+                Yuxin Chen, Ran &quot;Thomas&quot; Tian
+                <span class="author-note"><sup>*</sup> Equal contribution.</span>
+              </p>
+              <p class="venue"><em>Technical report</em>, 2026</p>
+              <p class="publication-award"><strong>Best Demo Award</strong> · Agentic Robotics Workshop, CoRL 2026</p>
+              <p class="publication-links">
+                <a href="https://atlas-humanoid.github.io/paper/atlas_tech_report.pdf" target="_blank" rel="noreferrer">Paper</a>
+                <a href="https://atlas-humanoid.github.io/" target="_blank" rel="noreferrer">Project</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="publication">
             <div class="publication-image">
               <img
                 src="assets/digital-twin-overview.svg"
@@ -271,7 +312,7 @@
               <div>
                 <h3>University of California, Berkeley</h3>
                 <p>Visiting Undergraduate Researcher, Mechanical Systems Control Laboratory</p>
-                <p class="experience-detail">Dynamic rope manipulation and sim-to-real robot learning.</p>
+                <p class="experience-detail">Whole-body humanoid intelligence, dynamic rope manipulation, and sim-to-real robot learning.</p>
               </div>
             </article>
 

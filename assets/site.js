@@ -27,8 +27,8 @@ document.querySelectorAll("[data-year]").forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
 
-const preview = document.querySelector("#ropeformer-preview");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+document.querySelectorAll(".publication-media video").forEach((preview) => {
 let previewVisible = false;
 
 function syncPreview() {
@@ -45,3 +45,4 @@ new IntersectionObserver(([entry]) => {
 }, { threshold: 0.15 }).observe(preview);
 document.addEventListener("visibilitychange", syncPreview);
 reducedMotion.addEventListener("change", syncPreview);
+});
